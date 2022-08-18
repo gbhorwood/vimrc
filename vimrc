@@ -165,7 +165,8 @@ nnoremap <leader>c :call ToggleBg()<CR>
 
 
 "-------------------------------
-" 
+" force syntax to php (need for *old* repos that use .htmp)
+" \p
 nnoremap <leader>p :set syntax=php<CR>
 
 "-------------------------------
@@ -195,6 +196,7 @@ nnoremap <C-F1> :call DecrementFont()<CR>
 "-------------------------------
 " tagbar config
 " turn tag navigator on and off
+" C-F5 toggle
 nmap <C-F5> :TagbarToggle<CR>
 
 
@@ -220,7 +222,6 @@ let g:lightline = {
     \   'gutentags': '%{gutentags#statusline("[Generating...]")}'
     \ },
     \ }
-
 
 "-------------------------------
 " gutentags config
@@ -273,7 +274,6 @@ let g:gutentags_ctags_exclude = [
       \ '*.pdf', '*.doc', '*.docx', '*.ppt', '*.pptx',
       \ ]
 
-
 "-------------------------------
 " limelight
 " toggle limelight with \l
@@ -284,6 +284,9 @@ nnoremap <leader>l :Limelight!! <CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+"-------------------------------
+" float term (a terminal that floats over vim)
+" \t
 let g:floaterm_autoclose=2
 let g:floaterm_autohide=2
 let g:floaterm_shell="/usr/bin/fish"
