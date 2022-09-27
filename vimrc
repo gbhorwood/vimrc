@@ -28,6 +28,7 @@
 " git clone git://github.com/neo4j-contrib/cypher-vim-syntax.git ~/.vim/pack/plugins/start/cypher-vim-syntax
 " git clone https://github.com/voldikss/vim-floaterm.git ~/.vim/pack/plugins/start/vim-floaterm
 " git clone https://github.com/junegunn/limelight.vim.git ~/.vim/pack/plugins/start/limelight
+" git clone https://github.com/dart-lang/dart-vim-plugin.git ~/.vim/pack/plugins/start/dart-vim-plugin
 
 runtime! debian.vim
 
@@ -121,12 +122,24 @@ let g:flake8_ignore="C901"
 
 
 "-------------------------------
-" php-cs-fixer config
+" fix syntax
 " <F4> fix
+
+"-------------------------------
+" <F4> php-cs-fixer config
 let g:php_cs_fixer_path = "~/.vim/php-cs-fixer.phar"
 let g:php_cs_fixer_rules = "@PSR2"
 let g:php_cs_fixer_php_path = "/usr/bin/php" 
-map <F4> :call PhpCsFixerFixFile()<CR>
+
+if (&filetype == 'php')
+    map <F4> :call PhpCsFixerFixFile()<CR>
+endif
+
+"-------------------------------
+" <F4> dart fmt
+if (&filetype == 'dart')
+    map <F4> :DartFmt<cr>
+endif
 
 
 "-------------------------------
