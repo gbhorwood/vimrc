@@ -25,7 +25,7 @@
 " git clone https://tpope.io/vim/fugitive.git ~/.vim/pack/plugins/start/tpope
 " git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
 " git clone --recursive https://github.com/andviro/flake8-vim.git ~/.vim/pack/plugins/start/flake8
-" git clone git://github.com/neo4j-contrib/cypher-vim-syntax.git ~/.vim/pack/plugins/start/cypher-vim-syntax
+" DEPRECATEDgit clone git://github.com/neo4j-contrib/cypher-vim-syntax.git ~/.vim/pack/plugins/start/cypher-vim-syntax
 " git clone https://github.com/voldikss/vim-floaterm.git ~/.vim/pack/plugins/start/vim-floaterm
 " git clone https://github.com/junegunn/limelight.vim.git ~/.vim/pack/plugins/start/limelight
 " git clone https://github.com/dart-lang/dart-vim-plugin.git ~/.vim/pack/plugins/start/dart-vim-plugin
